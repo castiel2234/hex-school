@@ -1,0 +1,91 @@
+html, body {
+  font-family: 'Roboto Mono', monospace, 'Lato', sans-serif;
+  line-height: 1.5; }
+
+h5 {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 700; }
+
+h6 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700; }
+
+img {
+  max-width: 100%; }
+
+.slidebar {
+  min-width: 296px; }
+  .slidebar h1 {
+    margin-bottom: 42px;
+    padding-left: 32px; }
+
+.nav li {
+  margin-bottom: 5px;
+  padding-left: 32px;
+  border-left: 4px solid transparent; }
+  .nav li a {
+    padding: 6px 0; }
+    .nav li a .material-icons {
+      margin-right: 16px; }
+    .nav li a span {
+      transition: color .25s ease 0s; }
+      .nav li a span:last-child {
+        line-height: 24px;
+        font-weight: 700; }
+  .nav li.active, .nav li:hover {
+    border-left: 4px solid #2A8356; }
+    .nav li.active a .material-icons, .nav li:hover a .material-icons {
+      color: #2A8356 !important; }
+    .nav li.active a span, .nav li:hover a span {
+      color: #2A8356; }
+
+.user-info {
+  margin-left: 32px; }
+  .user-info .user-pic {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 16px; }
+  .user-info .user-name {
+    margin-bottom: 4px;
+    font-weight: 700; }
+  .user-info .user-mail {
+    font-size: 14px;
+    line-height: 24px;
+    transition: color .25s ease 0s; }
+    .user-info .user-mail:hover {
+      color: #2A8356 !important; }
+
+.header .subtitle {
+  font-size: 24px;
+  line-height: 29px;
+  margin-right: 79px;
+  position: relative; }
+
+.header .btn {
+  font-size: 16px; }
+
+.header .sitetools li {
+  margin-right: 26px;
+  transition: color .25s ease 0s; }
+  .header .sitetools li:last-child {
+    margin-right: 0; }
+  .header .sitetools li:hover {
+    color: #2A8356; }
+
+form .form-group {
+  border-bottom: 1px solid #CDDDCD; }
+
+form label {
+  font-size: 14px;
+  line-height: 24px; }
+
+table .material-icons {
+  transition: color .25s ease 0s; }
+  table .material-icons:hover {
+    color: #2A8356 !important; }
+
+/*# sourceMappingURL=base.css.map */

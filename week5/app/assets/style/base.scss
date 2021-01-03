@@ -1,0 +1,127 @@
+@import './variables';
+
+html,body {
+ font-family: 'Roboto Mono', monospace, 'Lato', sans-serif;
+ line-height: 1.5;
+}
+
+h5{
+ font-size: 24px;
+ line-height: 36px;
+ font-weight: 700;
+}
+
+h6 {
+ font-size: 20px;
+ line-height: 24px;
+ font-weight: 700;
+}
+
+img {
+ max-width: 100%;
+}
+
+.slidebar {
+ min-width: 296px;
+ h1{
+  margin-bottom: 42px;
+  padding-left: 32px;
+ }
+}
+
+.nav {
+ li{
+  margin-bottom: 5px;
+  padding-left: 32px;
+  border-left: 4px solid transparent;
+  a {
+   padding: 6px 0;
+    .material-icons {
+     margin-right: 16px;
+    }
+    span {
+     transition: color .25s ease 0s;
+     &:last-child{
+      line-height: 24px;
+      font-weight: 700;
+     }
+    }
+  }
+  &.active, &:hover {
+   border-left: 4px solid $green;
+   a{
+    .material-icons {
+     color: $green!important;
+    }
+    span {
+     color: $green;
+    }
+   }
+  }
+ }
+}
+
+.user-info {
+ margin-left: 32px;
+ .user-pic {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 16px;
+ }
+ .user-name {
+  margin-bottom: 4px;
+  font-weight:700;
+ }
+ .user-mail {
+  font-size: 14px;
+  line-height: 24px;
+  transition: color .25s ease 0s;
+  &:hover {
+   color: $green!important;
+  }
+ }
+}
+
+.header {
+ // height: 93px;
+ .subtitle{
+  font-size: 24px;
+  line-height: 29px;
+  margin-right: 79px;
+  position: relative;
+ }
+ .btn {
+  font-size: 16px;
+ }
+ .sitetools li {
+  margin-right: 26px;
+  transition: color .25s ease 0s;
+  &:last-child{
+   margin-right: 0;
+  }
+  &:hover {
+   color: $green;
+  }
+ }
+}
+
+form {
+ .form-group {
+  border-bottom: 1px solid #CDDDCD;
+ }
+ label {
+  font-size: 14px;
+  line-height: 24px;
+ }
+}
+
+table {
+ .material-icons{
+  transition: color .25s ease 0s;
+  &:hover {
+   color: $green !important;
+  }
+ }
+}

@@ -1,0 +1,217 @@
+---
+title: CMS - Assignment
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+ <div class="header py-5 d-flex justify-content-between">
+  <div class="d-flex align-items-center">
+   <h2 class="subtitle text-dark my-0">Admin</h2>
+   <button type="button" class="btn btn-newAdmin text-dark bg-transparent border-0 d-flex align-items-center" data-toggle="modal" data-target="#add-admin">
+    <span class="material-icons mr-3 text-success">add</span>
+    <span>Add New Admin</span>
+  </button>
+  </div>
+  <div>
+   <ul class="sitetools d-flex list-unstyled my-0">
+    <li><a href="javascript" class="text-dark"><i class="material-icons">search</i></a></li>
+    <li><a href="javascript" class="text-dark"><i class="material-icons">notifications_active</i></a></li>
+   </ul>
+  </div>
+ </div>
+ <div class="table-responsive">
+  <table class="table">
+   <thead>
+    <tr>
+      <th scope="col">ID<a href="#" class="d-inline-block ml-1">
+       <i class="material-icons text-success align-text-top">arrow_downward</i>
+     </a></th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Verified</th>
+      <th scope="col">&nbsp;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>#1</th>
+      <td>Emir Wicks</td>
+      <td>emir.wicks@mail.com</td> 
+      <td>Yes</td>
+      <td class="edit-tool">
+       <a href="javascript:;" class="mr-4 text-dark" data-toggle="modal" data-target="#view-admin"><i class="material-icons">remove_red_eye</i></a>
+       <a href="javascript:;" class="text-dark" data-toggle="modal" data-target="#edit-admin"><i class="material-icons">edit</i></a>
+     </td>
+    </tr>
+    <tr>
+     <td>#2</th>
+     <td>Zaina Goldsmith</td>
+     <td>emir.wicks@mail.com</td>
+     <td>Yes</td>
+     <td class="edit-tool">
+      <a href="javascript:;" class="mr-4 text-dark"><i class="material-icons">remove_red_eye</i></a>
+       <a href="javascript:;" class="text-dark"><i class="material-icons">edit</i></a>
+     </td>
+   </tr>
+   <tr>
+    <td>#3</th>
+    <td>Emir Wicks</td>
+    <td>emir.wicks@mail.com</td>
+    <td>Yes</td>
+    <td class="edit-tool">
+      <a href="javascript:;" class="mr-4 text-dark"><i class="material-icons">remove_red_eye</i></a>
+       <a href="javascript:;" class="text-dark"><i class="material-icons">edit</i></a>
+     </td>
+  </tr>
+  <tr>
+   <td>#4</th>
+   <td>Emir Wicks</td>
+   <td>emir.wicks@mail.com</td>
+   <td>Yes</td>
+   <td class="edit-tool">
+      <a href="javascript:;" class="mr-4 text-dark"><i class="material-icons">remove_red_eye</i></a>
+       <a href="javascript:;" class="text-dark"><i class="material-icons">edit</i></a>
+     </td>
+ </tr>
+ <tr>
+  <td>#5</th>
+  <td>Emir Wicks</td>
+  <td>emir.wicks@mail.com</td>
+  <td>Yes</td>
+  <td class="edit-tool">
+      <a href="javascript:;" class="mr-4 text-dark"><i class="material-icons">remove_red_eye</i></a>
+       <a href="javascript:;" class="text-dark"><i class="material-icons">edit</i></a>
+     </td>
+</tr>
+<tr>
+ <td>#6</th>
+ <td>Emir Wicks</td>
+ <td>emir.wicks@mail.com</td>
+ <td>Yes</td>
+ <td class="edit-tool">
+      <a href="javascript:;" class="mr-4 text-dark"><i class="material-icons">remove_red_eye</i></a>
+       <a href="javascript:;" class="text-dark"><i class="material-icons">edit</i></a>
+     </td>
+</tr>
+<tr>
+ <td>#7</th>
+ <td>Emir Wicks</td>
+ <td>emir.wicks@mail.com</td>
+ <td>Yes</td>
+ <td class="edit-tool">
+      <a href="javascript:;" class="mr-4 text-dark"><i class="material-icons">remove_red_eye</i></a>
+       <a href="javascript:;" class="text-dark"><i class="material-icons">edit</i></a>
+     </td>
+</tr>
+<tr>
+ <td>#8</th>
+ <td>Emir Wicks</td>
+ <td>emir.wicks@mail.com</td>
+ <td>Yes</td>
+ <td class="edit-tool">
+      <a href="javascript:;" class="mr-4 text-dark"><i class="material-icons">remove_red_eye</i></a>
+       <a href="javascript:;" class="text-dark"><i class="material-icons">edit</i></a>
+     </td>
+</tr>
+<tr>
+ <td>#9</th>
+ <td>Emir Wicks</td>
+ <td>emir.wicks@mail.com</td>
+ <td>Yes</td>
+ <td class="edit-tool">
+      <a href="javascript:;" class="mr-4 text-dark"><i class="material-icons">remove_red_eye</i></a>
+       <a href="javascript:;" class="text-dark"><i class="material-icons">edit</i></a>
+     </td>
+</tr>
+<tr>
+ <td>#10</th>
+ <td>Emir Wicks</td>
+ <td>emir.wicks@mail.com</td>
+ <td>Yes</td>
+ <td class="edit-tool">
+      <a href="javascript:;" class="mr-4 text-dark"><i class="material-icons">remove_red_eye</i></a>
+       <a href="javascript:;" class="text-dark"><i class="material-icons">edit</i></a>
+     </td>
+</tr>
+  </tbody>
+  </table>
+</div>
+ <!-- Modal -->
+<div class="modal fade" id="add-admin" tabindex="-1" role="dialog" aria-labelledby="add-adminTitle" aria-hidden="true">
+ <div class="modal-dialog" role="document">
+   <div class="modal-content">
+     <div class="modal-header border-0">
+       <h5 class="modal-title" id="add-adminTitle">New Admin</h5>
+       <button type="button" class="close border-0" data-dismiss="modal" aria-label="Close">
+         <span aria-hidden="true">&times;</span>
+       </button>
+     </div>
+     <div class="modal-body">
+      <form>
+       <div class="form-group mb-4">
+        <h6 class="mb-3">Account</h6>
+        <label for="exampleInputPassword1">Name</label>
+        <input type="name" class="form-control" id="exampleInputName">
+        <label for="exampleInputEmail1">Email</label>
+         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      </div>
+      <div class="form-group mb-4">
+       <h6 class="mb-3">Verification</h6>
+       <div class="mb-3 d-flex justify-content-between">
+        <div class="d-flex align-items-center">
+          <span class="material-icons text-danger">warning</span><b>unverified</b>
+        </div>
+       </div>
+       <div class="btn text-success btn-block btn-outline-success bg-light w-100 py-3">Send Verification Mail</div>
+      </div>
+      <div class="form-group mb-4">
+       <h6 class="mb-3">Access Level</h6>
+       <button class="btn bth-light text-dark btn-outline-success bg-light w-100 p-3 d-flex justify-content-between  align-items-center dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">-Choose access level-<span class="material-icons">keyboard_arrow_down</span>  
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(16px, 40px, 0px);">
+         <li><a class="dropdown-item" href="javascript:;">Action</a></li>
+         <li><a class="dropdown-item" href="javascript:;">Another action</a></li>
+         <li><a class="dropdown-item" href="javscript:;">Something else here</a></li>
+       </ul>
+      </button>
+      </div>   
+     </form>
+       
+     </div>
+     <div class="modal-footer">
+       <button type="button" class="btn btn-outline-success" data-dismiss="modal">Cancel</button>
+       <button type="button" class="btn btn-outline-success bg-success text-light">Add</button>
+     </div>
+   </div>
+ </div>
+</div>
+<div class="modal fade" id="view-admin" tabindex="-1" role="dialog" aria-labelledby="view-adminTitle" aria-hidden="true">
+ <div class="modal-dialog modal-dialog-centered" role="document">
+   <div class="modal-content">
+
+    <div class="media d-flex p-5">
+     <img class="mr-4 card-img" src="https://hexschool.github.io/webLayoutTraining1st/week5/emir.jpeg"> 
+     <div class="media-body w-100">
+      <div class="d-flex vertical-align-center justify-content-between">
+       <p class="m-0">#1</p>
+       <button type="button" class="close border-0" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span></button>
+      </div>
+      <p class="text-dark m-0">Admin</p>
+      <h5 class="text-dark font-weight-bold">Emir Wicks</h5>
+      <a class="user-mail text-decoration-none text-secondary d-block mb-3 " href="mailto:andy0401@mail.com">andy0401@mail.com</a>
+      <div class="edit-bar d-flex justify-content-between">
+       <p class="text-dark bg-primary m-0">Verified</p>
+       <button class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><span class="material-icons text-succedd">expand_less</span></button>
+      </div>
+      <div class="collapse mt-3" id="collapseExample">
+       <button class="btn btn-outline-danger deactivate">Deactivate</button>
+       <button class="btn btn-success edit" data-toggle="modal" data-target="#add-admin">Edit</button>
+     </div>
+     </div>
+   </div>
+
+
+   </div>
+ </div>
+</div>

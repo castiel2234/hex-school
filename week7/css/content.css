@@ -1,0 +1,103 @@
+@charset "UTF-8";
+.content {
+ padding: 0 0 80px 0;
+}
+.content h2 {
+ padding: 80px 0 36px;
+}
+.banner .container{
+ display: flex;
+ height: 100%;
+ align-items: flex-end;
+}
+.banner h1 {
+ position: relative;
+ font-size: 64px;
+ line-height: 80px;
+}
+.banner.qna__banner h1:after {
+ content: '';
+ display: inline-block;
+ position: absolute;
+ top: 50%;
+ height: 58px;
+ width: 58px;
+ margin-left: 24px;
+ background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/7059003f6d011be52053cb5e63d68f3999af01d7/week3/icon-help.svg') no-repeat 50% 50% / contain;
+ transform: translateY(-50%);
+}
+.qna__banner {
+ position: relative;
+ height: 304px;
+ background: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/qa.png?raw=true') no-repeat 50% 50% / cover;
+}
+.qna__content li {
+ margin-bottom: 40px;
+}
+.qna__content li p {
+ font-size: 20px;
+ line-height: 23px;
+ margin-bottom: 16px;
+}
+.qna__content li p.answer {
+ font-size: 16px;
+ line-height: 1.5;
+ margin-bottom: 0;
+ padding: 0 0 0 90px;
+}
+
+@media (max-width: 992px) {
+ .banner .container {
+  max-width: 100%;
+  padding: 0 30px;
+ }
+ .banner h1 {
+  font-size: 48px;
+ }
+ .banner.qna__banner h1:after {
+  width: 48px;
+  height: 48px;
+  margin-left: 16px;
+ }
+ .content h2 {
+  padding: 40px 0 36px;
+ }
+ .qna__content li p.answer {
+  padding: 0 0 0 50px ;
+ }
+}
+@media (max-width: 768px) {
+ .banner .container,
+ .content .container {
+  max-width: 100%;
+  padding: 0 15px;
+ }
+ .qna__banner {
+  height: 143px;
+ }
+ .banner h1 {
+  font-size: 28px;
+  line-height: 40px;
+ }
+ .banner.qna__banner h1:after {
+  width: 24px;
+  height: 24px;
+  margin-left: 8px;
+ }
+ .content h2 {
+  font-size: 20px;
+  line-height: 28px;
+  padding: 24px 0 12px;
+ }
+ .qna__content li {
+  margin-bottom: 20px;
+ }
+ .qna__content li p {
+  font-size: 16px;
+  line-height: 1.5;
+ }
+ .qna__content li p.answer {
+  font-size: 14px;
+  padding: 0;
+ }
+}

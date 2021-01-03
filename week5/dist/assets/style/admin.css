@@ -1,0 +1,43 @@
+table td {
+  padding-top: 17px !important;
+  padding-bottom: 19px !important;
+  border-bottom: 1px solid #CDDDCD; }
+
+.edit-tool {
+  text-align: right; }
+  .edit-tool a {
+    display: inline-block;
+    margin-right: 16px;
+    line-height: 0; }
+    .edit-tool a:last-child {
+      margin-right: 0; }
+
+.dropdown-toggle::after {
+  content: none; }
+
+.card-img {
+  margin-right: 24px;
+  width: 141px;
+  height: 141px; }
+
+.edit-bar p {
+  font-size: 14px;
+  line-height: 17px;
+  padding: 4px 8px; }
+
+.edit-bar .btn {
+  position: relative;
+  height: 24px;
+  width: 24px; }
+  .edit-bar .btn span {
+    position: absolute;
+    transform: translate(-50%, -50%); }
+
+.deactivate {
+  width: 145px;
+  margin-right: 16px; }
+
+.edit {
+  width: 92px; }
+
+/*# sourceMappingURL=admin.css.map */

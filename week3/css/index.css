@@ -1,0 +1,464 @@
+@charset "UTF-8";
+
+/* banner */
+.banner {
+    background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner.png') no-repeat 50% 50% / cover;
+    height: 840px;
+    width: 100%;
+}
+
+.banner .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+}
+
+.banner p {
+    font-size: 36px;
+    line-height: 1.5;
+}
+
+.banner h2 {
+    font-size: 64px;
+    line-height: 1.5;
+}
+
+/* professional  section */
+.professional ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.professional li {
+    width: 18.8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.professional li img {
+    margin-bottom: 40px;
+}
+
+.professional li p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* classic section  */
+.classic li {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.classic li:not(:last-of-type) {
+    margin-bottom: 32px;
+}
+
+.classic li:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+.classic li img {
+    width: 57.72%;
+    margin-right: 30px;
+}
+
+.classic li:nth-child(2) img {
+    margin-right: 0;
+    margin-left: 30px;
+}
+
+.classic li a {
+    position: relative;
+    display: block;
+    font-size: 48px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.classic li a:before {
+    content: '';
+    display: inline-block;
+    width: 48px;
+    height: 38px;
+    background: url('/img/icon-diamond.svg') no-repeat 50% 50% / contain;
+    margin-right: 8px;
+}
+
+.classic li a.sunglasses:before {
+    height: 48px;
+    width: 48px;
+    background: url('/img/icon-sun.svg') no-repeat 50% 50% / contain;
+}
+
+.classic li a.functional:before {
+    height: 48px;
+    width: 35px;
+    background: url('/img/icon-thunder.svg') no-repeat 50% 50% / contain;
+}
+
+/* crossover section */
+.crossover {
+    background: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=true') no-repeat left center / cover;
+}
+
+.crossover ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.crossover li {
+    width: calc((100% - 30px) / 2);
+}
+
+.crossover li a {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.crossover li a:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, .5);
+    z-index: 10;
+}
+
+.crossover li h3 {
+    position: absolute;
+    font-size: 72px;
+    line-height: 1.5;
+    z-index: 20;
+}
+
+/* custom-recommend section */
+.custom-recommend ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.custom-recommend li {
+    width: calc((100% - 90px) / 4);
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-recommend li img {
+    line-height: 0;
+}
+
+.custom-recommend li .intro {
+    padding: 14px 16px;
+    color: #212529;
+    border: 1px solid #DEE2E6;
+}
+
+.custom-recommend li .intro h3 {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 7px;
+}
+
+.custom-recommend li .intro p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.custom-recommend li .intro span {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #707070;
+}
+
+/* contact section  */
+.contact .container {
+    max-width: 730px;
+}
+
+.contact h3 {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.contact .formRow {
+    margin-bottom: 16px;
+}
+
+.contact .formRow.checkbox {
+    margin-bottom: 42px;
+}
+
+.contact .formRow.submit {
+    margin-bottom: 0;
+}
+
+.contact label {
+    display: block;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+
+.contact input[type=text],
+.contact textarea {
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 16px;
+    line-height: 1.5;
+    border: 1px solid #000;
+}
+
+.contact textarea {
+    height: 136px;
+}
+
+.contact::placeholder {
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, .2);
+}
+
+.contact a.submit {
+    display: inline-block;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 16px 143px;
+    border: 0;
+    transition: all .3s ease 0s;
+}
+
+.contact a:hover.submit {
+    background: #650300;
+}
+
+/* For tablet */
+@media (max-width: 992px) {
+
+    /* banner */
+    .banner p {
+        font-size: 20px;
+    }
+
+    .banner h2 {
+        font-size: 48px;
+    }
+
+    /* professional section  */
+    .professional li {
+        width: 34.35%;
+        margin-bottom: 40px;
+    }
+
+    .professional h3 {
+        font-size: 20px;
+    }
+
+    .professional li img {
+        margin-bottom: 16px;
+    }
+
+    /* classic section  */
+    .classic li:nth-child(2) {
+        flex-direction: row;
+    }
+
+    .classic li:nth-child(2) img {
+        margin-right: 30px;
+        margin-left: 0;
+    }
+
+    .classic li a {
+        font-size: 28px;
+    }
+
+    .classic li a:before,
+    .classic li a.sunglasses:before {
+        width: 32px;
+        height: 32px;
+        vertical-align: text-bottom;
+    }
+
+    .classic li a.functional:before {
+        width: 23px;
+        height: 32px;
+        vertical-align: text-bottom;
+    }
+
+    /* crossover section */
+    .crossover li h3 {
+        font-size: 32px;
+        line-height: 25px;
+    }
+
+    /* custom-recommend section */
+    .custom-recommend li {
+        width: calc((100% - 30px) / 2);
+        margin-bottom: 28px;
+    }
+
+    .custom-recommend li:nth-last-of-type(1),
+    .custom-recommend li:nth-last-of-type(2) {
+        margin-bottom: 0;
+    }
+
+    /* contact section  */
+    .contact .container {
+        max-width: 450px;
+    }
+
+    .contact h3 {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    .contact label {
+        font-size: 14px;
+    }
+
+    .contact .formRow {
+        margin-bottom: 8px;
+    }
+
+    .contact label {
+        margin-bottom: 2px;
+    }
+
+    .contact input[type=text],
+    .contact textarea {
+        padding: 8px 12px;
+    }
+
+    .contact::placeholder {
+        font-size: 14px;
+    }
+
+    .contact textarea {
+        height: 100px;
+    }
+
+    .contact a.submit {
+        padding: 8px 78px;
+    }
+
+}
+
+/* For mobile */
+@media (max-width: 768px) {
+
+    /* banner */
+    .banner {
+        height: 394px;
+        background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-sm.png?raw=true) no-repeat 50% 50% / cover;
+    }
+
+    .banner p {
+        font-size: 16px;
+    }
+
+    .banner h2 {
+        font-size: 32px;
+    }
+
+    /* professional section  */
+    .professional {
+        padding: 32px 0 12px;
+    }
+
+    .professional h2 {
+        font-size: 24px;
+        line-height: 2;
+    }
+
+    .professional li {
+        width: 100%;
+    }
+
+    /* classic section  */
+
+    .classic li {
+        justify-content: center;
+    }
+
+    .classic li:not(:last-of-type) {
+        margin-bottom: 8px;
+    }
+
+    .classic li img {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .classic li:nth-child(2) img {
+        margin-right: 0;
+    }
+
+    .classic li h3 {
+        position: absolute;
+    }
+
+    .classic li a {
+        color: #fff;
+    }
+
+    .classic li a:before {
+        background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-diamond-white.svg') no-repeat;
+    }
+
+    .classic li a.sunglasses:before {
+        background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-sun-white.svg') no-repeat;
+    }
+
+    .classic li a.functional:before {
+        background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-thunder-white.svg') no-repeat;
+    }
+
+    /* crossover section */
+
+    .crossover li {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .crossover li:nth-child(2) {
+        margin-bottom: 0;
+    }
+
+    /* custom-recommend section */
+    .custom-recommend li,
+    .custom-recommend li:nth-last-of-type(2) {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    /* contact section  */
+    .contact .container {
+        max-width: 345px;
+    }
+
+    .contact h3 {
+        margin-bottom: 8px;
+    }
+
+    .contact .formRow.checkbox {
+        margin-bottom: 32px;
+    }
+
+}
